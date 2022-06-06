@@ -18,7 +18,7 @@ checkBtn.addEventListener('click', () => {
     coldOrHot.innerHTML = "🎉  It's correct ! ";
     highScore.innerHTML = `😎 Hightscore : ${startScore}`;
     body.style.backgroundColor = '#4f772d';
-  } else if (textarea.value > '20') {
+  } else if (textarea.value > 20) {
     alert('Between 1 and 20 !');
   } else if (textarea.value == '') {
     alert('Enter a Number !');

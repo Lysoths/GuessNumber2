@@ -130,3 +130,9 @@ body {
 .score-container .score-box .highscore {
   margin-top: 30px;
 }
+
+@media only screen and (max-width: 780px) {
+  body {
+    transform: scale(0.5);
+  }
+}
