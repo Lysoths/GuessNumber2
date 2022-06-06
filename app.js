@@ -53,5 +53,6 @@ resetBtn.addEventListener('click', () => {
   startScore = 20;
   score.innerHTML = `💯 Score : ${startScore}`;
   body.style.backgroundColor = '#201f20';
+  showResult.innerHTML = '?';
 });
 console.log = function () {};
