@@ -52,5 +52,6 @@ checkBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
   startScore = 20;
   score.innerHTML = `💯 Score : ${startScore}`;
+  body.style.backgroundColor = '#201f20';
 });
 console.log = function () {};
