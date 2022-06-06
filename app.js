@@ -26,6 +26,9 @@ checkBtn.addEventListener('click', () => {
     startScore = startScore - 1;
     score.innerHTML = `💯 Score : ${startScore}`;
     coldOrHot.innerHTML = `🤢 Too hight`;
+    coldOrHot.style.backgroundColor = '#d904293d';
+    coldOrHot.style.padding = '20px';
+    coldOrHot.style.borderRadius = '5px';
     console.log('high');
     if (startScore == 0) {
       alert('Are you kidding me ?');
@@ -35,6 +38,9 @@ checkBtn.addEventListener('click', () => {
     startScore = startScore - 1;
     score.innerHTML = `💯 Score : ${startScore}`;
     coldOrHot.innerHTML = `🤢 Too low`;
+    coldOrHot.style.backgroundColor = '#a2d2ff3d';
+    coldOrHot.style.padding = '20px';
+    coldOrHot.style.borderRadius = '5px';
     console.log('low');
     if (startScore == 0) {
       alert('Are you kidding me ?');
