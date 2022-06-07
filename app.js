@@ -7,7 +7,7 @@ const showResult = document.querySelector('.result span');
 const textarea = document.querySelector('.guessing textarea');
 const body = document.querySelector('body');
 
-const randomNumber = Math.ceil(Math.random() * 20);
+let randomNumber = Math.ceil(Math.random() * 20);
 let startScore = 20;
 let lastHighScore = 20;
 score.innerHTML = `💯 Score : ${startScore}`;
@@ -54,5 +54,7 @@ resetBtn.addEventListener('click', () => {
   score.innerHTML = `💯 Score : ${startScore}`;
   body.style.backgroundColor = '#201f20';
   showResult.innerHTML = '?';
+  randomNumber = Math.ceil(Math.random() * 20);
+  textarea.value = '';
 });
 console.log = function () {};
