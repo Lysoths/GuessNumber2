@@ -16,8 +16,8 @@ checkBtn.addEventListener('click', () => {
   if (textarea.value == randomNumber && textarea.value !== '') {
     showResult.innerHTML = randomNumber;
     coldOrHot.innerHTML = "🎉  It's correct ! ";
-    highScore.innerHTML = `😎 Hightscore : ${startScore}`;
     body.style.backgroundColor = '#4f772d';
+    highScore.innerHTML = `😎 Hightscore : ${startScore}`;
   } else if (textarea.value > 20) {
     alert('Between 1 and 20 !');
   } else if (textarea.value == '') {
@@ -46,6 +46,9 @@ checkBtn.addEventListener('click', () => {
       alert('Are you kidding me ?');
       location.reload();
     }
+  }
+  if (startScore > highScore.innerHTML) {
+    highScore.innerHTML = `😎 Hightscore : ${startScore}`;
   }
 });
 
